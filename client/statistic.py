@@ -12,6 +12,8 @@ def getUUID():
 
 
 def report(t):
+    pass
+    '''
     config.init()
     to_report = config.get('statistic', True)
     if to_report:
@@ -22,3 +24,4 @@ def report(t):
             requests.post(url, data=payload)
         except Exception:
             return
+    '''
