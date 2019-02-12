@@ -47,7 +47,11 @@ except NameError:  # Python 3
 
 import sys
 reload(sys)
-sys.setdefaultencoding('utf8')
+
+try:
+    sys.setdefaultencoding('utf8')
+except AttributeError:
+    pass
 
 
 class AbstractTTSEngine(object):
